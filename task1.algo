@@ -1,0 +1,38 @@
+ALGORITHM task1
+VAR
+   mot:INTEGER
+    voy,i:INTEGER
+    text:STRING
+BEGIN
+    write("donnez un mot")
+    read("text")
+    WHILE (text[i] != ".") DO
+        IF (text[i] == "") THEN
+            word := word +1
+            read(word)
+        END_IF
+        IF (text[i]=="o"||text[i]=="i"||text[i]=="e" ||text[i]=="a"||text[i]=="u"||text[i]=="y")THEN
+         voy:=voy+1 
+         read(voy)  
+        END_IF
+        i++
+    END_WHILE
+END
+
+ALGORITHM task2
+VAR
+  jeu1 : ARRAY_OF number[3,1,7,9];
+  jeu1 : ARRAY_OF number[3,1,7,9];
+  sum:INTEGER
+  exist:BOOLEAN
+BEGIN
+    FOR i FROM 0 TO length.jeu1 STEP 1  DO
+        found :=-1
+        FOR j FROM 0 TO length.jeu1 STEP 1  DO
+            IF (jeu2[i]==jeu1[i]) THEN
+                found := 1
+            END_IF
+        END_FOR
+    END_FOR
+    read(sum)
+END
